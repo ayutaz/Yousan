@@ -1,6 +1,6 @@
 class Clear{
     // 自分の現在の位置を取得
-getPosition() {
+public getPosition() {
     // getValueは配列指定 0 -> x,1 -> y...
     playerX = player.position().getValue(0)
     playerY = player.position().getValue(1)
