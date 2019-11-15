@@ -16,4 +16,7 @@ class Clear{
         playerY = positions.groundPosition(player.position()).getValue(1)
         player.say("地面の座標:" + playerY)
     }
+    public test() {
+        player.say(this.playerX.toString() + "," + this.playerY.toString())
+    }
 } 
