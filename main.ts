@@ -1,5 +1,5 @@
 class Clear{
-    public A(){
+    public getPosition() {
         player.say("second hello")
     }
 } 
