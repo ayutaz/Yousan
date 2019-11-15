@@ -2,6 +2,11 @@ class Clear{
     playerX: number
     playerY: number
     playerZ: number
+    constructor() {
+        this.playerX = 0
+        this.playerY = 0
+        this.playerZ = 0
+    }
     public getPosition() {
         // getValueは配列指定 0 -> x,1 -> y...
         playerX = player.position().getValue(0)
