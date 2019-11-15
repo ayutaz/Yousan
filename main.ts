@@ -1,5 +1,5 @@
 class Clear{
     public A(){
-        player.say("Hi!")
+        player.say("second hello")
     }
 } 
