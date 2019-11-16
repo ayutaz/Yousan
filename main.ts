@@ -1,12 +1,12 @@
 class Clear{
     // プレイヤーの位置を保持する
-    private playerX: number
-    private playerY: number
-    private playerZ: number
-    private groundPositionY: number
+    playerX: number
+    playerY: number
+    playerZ: number
+    groundPositionY: number
     // 整地するための範囲変数
-    private deleteRange: number
-    private deleteHeight: number
+    deleteRange: number
+    deleteHeight: number
 
     constructor() {
         this.playerX = 0
