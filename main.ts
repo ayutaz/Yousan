@@ -2,6 +2,9 @@ class Clear{
     playerX: number
     playerY: number
     playerZ: number
+    groundPositionY: number
+    deleteRange: number
+    deleteHeight: number
     constructor() {
         this.playerX = 0
         this.playerY = 0
@@ -16,10 +19,7 @@ class Clear{
             this.playerX.toString() + "," +
             this.playerY.toString() + "," +
             this.playerZ.toString() + ")")
-        this.playerY = positions.groundPosition(player.position()).getValue(1)
-        player.say("地面の座標:" + this.playerY)
-    }
-    public call() {
-        player.say(this.playerX.toString() + "," + this.playerY.toString())
+        this.groundPositionY = positions.groundPosition(player.position()).getValue(1)
+        player.say("地面の座標:" + this.groundPositionY)
     }
 } 
