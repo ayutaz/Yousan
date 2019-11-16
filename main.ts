@@ -26,9 +26,9 @@ class Clear{
         this.playerY = player.position().getValue(1)
         this.playerZ = player.position().getValue(2)
         player.say("player position:(" +
-            this.playerX.toString() + "," +
-            this.playerY.toString() + "," +
-            this.playerZ.toString() + ")")
+            this.playerX + "," +
+            this.playerY + "," +
+            this.playerZ + ")")
         this.groundPositionY = positions.groundPosition(player.position()).getValue(1)
         player.say("地面の座標:" + this.groundPositionY)
     }
