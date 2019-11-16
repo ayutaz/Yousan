@@ -49,4 +49,17 @@ class Clear{
             }
         }
     }
+    public Large () {
+        test.GetPosition()
+        // 自分の位置から実行した場合岩盤以下になる場合は，deleteHeightの値を変更する
+        if(test.playerY - test.deleteHeight <= 0) test.deleteHeight = test.playerY -1
+        // 深さ指定なし，広さ指定なし
+        for(let i = test.playerY;i > test.playerY - test.deleteHeight;i-- ){
+            blocks.fill(
+                Block.Air, 
+                positions.createWorld(test.playerX -50,i,test.playerZ -50), 
+                positions.createWorld(test.playerX + 49,i - 1,test.playerZ + 49)
+            )
+        }
+    }
 } 
