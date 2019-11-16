@@ -1,6 +1,8 @@
 # yousan
 
+## Clear
 
+* Large():自分の現在地から100×100×50を正方形で整地する．（Block.Airで敷き詰める）
 
 ## Use this extension
 
