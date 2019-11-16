@@ -13,7 +13,7 @@ class Clear{
         this.playerY = 0
         this.playerZ = 0
         this.groundPositionY = 0
-        this.deleteHeight = 0
+        this.deleteHeight = 50
         this.deleteRange = 0
     }
     public SetDeleteNumber(r: number, h: number) {
